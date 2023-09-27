@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<h2>Статистика загрязнённости воздуха</h2>
+		<form id="form">
+			<input type="text" size="30" id="box" placeholder="Введите название города"/>
+			<button type="submit">Получить данные</button>
+		</form>
+		<h4>Время : Количество частиц pm10 : Количество частиц pm2_5</h4>
+		<div class="flex-container">
+			<div id="time-cont"><ul id="time"></ul></div>
+			<div id="chart-cont">
+				<canvas id="chart_pm2_5"></canvas></br>
+				<canvas id="chart_pm10"></canvas>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<script src="scripts.js"></script>
+	</body>
+</html>
